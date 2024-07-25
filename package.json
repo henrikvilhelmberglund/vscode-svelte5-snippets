@@ -70,7 +70,7 @@
     "publish": "vsce publish",
     "version": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s",
     "release": "npx commit-and-tag-version",
-    "postrelease": "git push --follow-tags origin master"
+    "postrelease": "git push --follow-tags origin main"
   },
   "devDependencies": {
     "commit-and-tag-version": "^11.0.0"
