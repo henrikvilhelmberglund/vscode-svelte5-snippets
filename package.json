@@ -1,0 +1,78 @@
+{
+  "name": "vscode-svelte5-snippets-henrikvilhelmberglund",
+  "displayName": "Svelte 5 Snippets",
+  "description": "Svelte 5 Snippets for VS Code",
+  "version": "0.1.0",
+  "license": "MIT",
+  "publisher": "henrikvilhelmberglund",
+  "icon": "icons/logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/henrikvilhelmberglund/vscode-svelte5-snippets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/henrikvilhelmberglund/vscode-svelte5-snippets/issues"
+  },
+  "engines": {
+    "vscode": "^1.26.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "svelte",
+    "snippets"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "svelte",
+        "aliases": [
+          "Svelte",
+          "Svelte 5",
+          "svelte"
+        ],
+        "filenamePatterns": [
+          "*.svelte",
+          "*.svelte.js",
+          "*.svelte.ts"
+        ]
+      }
+    ],
+    "snippets": [
+      {
+        "language": "svelte",
+        "path": "./snippets/svelte.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/svelte-script.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/svelte-script.json"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/svelte-style.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/svelte.json"
+      },
+      {
+        "language": "markdown",
+        "path": "./snippets/svelte.json"
+      }
+    ]
+  },
+  "scripts": {
+    "publish": "vsce publish",
+    "version": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s",
+    "release": "npx commit-and-tag-version",
+    "postrelease": "git push --follow-tags origin master"
+  },
+  "devDependencies": {
+    "commit-and-tag-version": "^11.0.0"
+  }
+}

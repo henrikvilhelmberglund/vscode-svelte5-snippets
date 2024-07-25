@@ -1,0 +1,11 @@
+{
+  "svelte-global-style": {
+    "prefix": "s-global-style",
+    "body": [
+      ":global(${1:body}) {",
+      "\t$2",
+      "}"
+    ],
+    "description": "add global styles to your style tag"
+  }
+}
