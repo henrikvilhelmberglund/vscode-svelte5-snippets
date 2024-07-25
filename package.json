@@ -2,7 +2,7 @@
   "name": "vscode-svelte5-snippets-henrikvilhelmberglund",
   "displayName": "Svelte 5 Snippets",
   "description": "Svelte 5 Snippets for VS Code",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "publisher": "henrikvilhelmberglund",
   "icon": "icons/logo.png",
