@@ -497,7 +497,7 @@
   "svelte-boilerplate": {
     "prefix": "s-!",
     "body": [
-      "<script>",
+      "<script lang=\"ts\">",
       "\t$0",
       "</script>",
       "",
@@ -509,69 +509,51 @@
     ],
     "description": "boilerplate for svelte page"
   },
-  "svelte-boilerplate-base": {
-    "prefix": "s-!!",
-    "body": [
-      "<script>",
-      "import { base } from \"\\$app/paths\";",
-      "\t$0",
-      "</script>",
-      "",
-      "",
-      "",
-      "<style>",
-      "\t",
-      "</style>"
-    ],
-    "description": "boilerplate for svelte page with base folder import"
-  },
   "svelte-boilerplate-js": {
     "prefix": "s-!-js",
     "body": [
       "<script>",
-      "import { onMount } from 'svelte';",
-      "onMount(() => {",
-      "let body = document.querySelector('body');",
-      "body.style.display = 'block';",
-      "// import(\"./main.js\");",
-      "});",
       "\t$0",
       "</script>",
       "",
       "",
       "",
       "<style>",
-      ":global(body) {",
-      "  display: none;",
-      "}",
       "\t",
       "</style>"
     ],
-    "description": "boilerplate for svelte page with vanillaish JS"
+    "description": "boilerplate for svelte page (JS)"
   },
-  "svelte-boilerplate-js-async": {
-    "prefix": "s-!-js-async",
+  "svelte-boilerplate-component": {
+    "prefix": "s-!!",
     "body": [
-      "<script>",
-      "import { onMount } from 'svelte';",
-      "onMount(async () => {",
-      "let body = document.querySelector('body');",
-      "body.style.display = 'block';",
-      "// await import(\"./main.js\");",
-      "});",
-      "\t$0",
+      "<script lang=\"ts\">",
+      "\tconst { $0 } = \\$props();",
       "</script>",
       "",
       "",
       "",
       "<style>",
-      ":global(body) {",
-      "  display: none;",
-      "}",
       "\t",
       "</style>"
     ],
-    "description": "(async) boilerplate for svelte page with vanillaish JS"
+    "description": "boilerplate for svelte component"
+  },
+  "svelte-boilerplate-children": {
+    "prefix": "s-!!!",
+    "body": [
+      "<script lang=\"ts\">",
+      "\tconst { children } = \\$props();",
+      "\t$0",
+      "</script>",
+      "",
+      "{@render children()}",
+      "",
+      "<style>",
+      "\t",
+      "</style>"
+    ],
+    "description": "boilerplate for svelte children"
   },
   "Svelte Documentation Comment": {
     "prefix": "s-docs",
