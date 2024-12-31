@@ -33,8 +33,18 @@
           "svelte"
         ],
         "filenamePatterns": [
-          "*.svelte",
-          "*.svelte.js",
+          "*.svelte"
+        ]
+      },
+      {
+        "id": "javascript",
+        "filenamePatterns": [
+          "*.svelte.js"
+        ]
+      },
+      {
+        "id": "typescript",
+        "filenamePatterns": [
           "*.svelte.ts"
         ]
       }
