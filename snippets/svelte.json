@@ -71,6 +71,13 @@
     ],
     "description": "html content expression"
   },
+    "svelte-const": {
+    "prefix": "s-const",
+    "body": [
+      "{@const ${1:variable} = ${2:expression}}"
+    ],
+    "description": "constant declaration"
+  },
   "svelte-key-block": {
     "prefix": "s-key-block",
     "body": [
